@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animal Adoption Platform</title>
+<style>
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #cd9dd3;
+  }
+
+  #animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .animal-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+  }
+
+  .animal-card button {
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .save-btn {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>Animal Adoption!</h1>
+  
+  
+  <form id="animal-form">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="text" id="species" placeholder="Species" required>
+    <input type="number" id="age" placeholder="Age" required>
+    <button type="submit">Add Animal</button>
+  </form>
+
+  
+  <div id="animal-container"></div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
